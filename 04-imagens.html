@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Trabalhando com imagens</h1>
+<hr>
+    <p>Trabalhando com elemento de &lt;img&gt; </p>
+    <img src="por-do-sol.jpg" alt="lindo por do sol com cores vibrantes" width="500">
+
+    <p>Entendendo os atributos: </p>
+    <ul>
+      <li><<strong> src</strong>: Source/fontes: é o caminho onde a imagem está armazenada. Pode ser um caminho local ou um link direto da internet </li>
+
+      <li> <strong> alt</strong></li>: alt/alternativa. É uma descrição da imagem,é cruscial para <strong>acessibilidade.</strong>
+    
+    </ul>
+
+    <h2>Trabalhando com recursos externos</h2>
+    <P>configurando imagens externas</P>
+
+    <img src="https://www.guiaviagensbrasil.com/imagens/coqueiro-praia-santos-sp.jpg" alt="belo coqueiro a beira da praia em um dia ensolarado" height="500">
+
+    <h2>Outras abordagens</h2>
+    <h3>Elemento figure</h3>
+    <figure>
+        <img src="por-do-sol.jpg" alt="lindo por do solcom cores vibrantes">
+    </figure>
+
+    <figcaption>Pôr do sol no ceará - Fotos: Murilo Silva</figcaption>
+
+    <h3>Elemento picture </h3>
+    <p>Utilizamos o elemento &lt;picture&gt; serve para controlarmos qual arquivo será utilizado de acordo com determinadas condições </p>
+
+    <picture>
+        <source media="(max-width: 600px)" srcset="https://www.guiaviagensbrasil.com/imagens/coqueiro-praia-santos-sp.jpg">
+
+        <source media="(min-width:601px)" srcset="por-do-sol.jpg">
+
+        <!-- img com fallback (plano b) - caso não seja possível utilizar alguma imagem configurada no source acima, o navegador entrega a imagem do img -->
+        <img src="por-do-sol.jpg" alt="Belo por do sol no ceará">
+    </picture>
+
+    <hr>
+    <h2> Sobre os tipos de imagens</h2>
+    <P>Voc~e pode encontrar um acervo muito grande de tiposd de imagens. A escolha da imagem certa pode elevar a performance do seu site. Veja a lista abaixo</P>
+    <ul>
+        <li> <strong>JPEG/JPG</strong> Bom para fotografias, produtos fotográfados, imagens com muitas cores e detalhes. Se você tentar otimizar demais, a perda de qualidade se torna visível.</li>
+
+        <li><strong>PNG</strong> Suporta transparência e é muito bom para imagens que precisam preservar certos detalhes, como por exemplo: logos, imagens que precisam de transparência e etc.</li>
+
+        <li><strong>WEBP</strong> formato recente desenvolvido com foco na web. Além de também suportar transparência, também consegue trabalhar com imagens de alta definição. Excelente escolha para fotografia, imagens de produtos, imagens com transparência e imagens gerais.</li>
+
+        <li> <strong>AVIP</strong>: É um formato mais recente e também muito eficiente. É excelente, para fotografias, imagens grandes, sites onde desempenho e economia de dados são extremamente importantes.</li>
+
+        <li> <Strong>SVG</Strong> É um elemento vetorial, escelente para jogos, ícones, simbolos e etc.</li>
+    </ul>
+
+</body>
+
+</html>
